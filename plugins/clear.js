@@ -1,3 +1,5 @@
+// Copyright (C) 2020 Afx-Abu //
+
 const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = require('@adiwajshing/baileys');
 const Asena = require('../events');
 const Config = require('../config');
