@@ -4,8 +4,7 @@ let w = require('../config');
 let v = w.SESSION
 let {trim} = require('raganork-bot');
 let f = require('fs');
-let i = w.WORKTYPE == 'public' ? false : true;
-e.addCommand({pattern: 'trim ?(.*)', fromMe: i, desc:'Sets sticker pack & author name with given ones.'}, (async (m, t) => { 
+e.addCommand({pattern: 'trim ?(.*)', fromMe: true, desc:'Sets sticker pack & author name with given ones.'}, (async (m, t) => { 
 var q = await m.client.downloadAndSaveMediaMessage({key: {remoteJid: m.reply_message.jid,id: m.reply_message.id},message: m.reply_message.data.quotedMessage});
 var au,p;
 if (t[1].includes(':')) {
