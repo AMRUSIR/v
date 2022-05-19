@@ -1,3 +1,5 @@
+// Copyright (C) 2020 Afx-Abu //
+
 const Config = require('./config');
 const fs = require('fs');
 const chalk = require('chalk');
