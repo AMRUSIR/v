@@ -1,10 +1,9 @@
-const skl = require('../events');
+const jsl = require('../events');
 const { MessageType, Mimetype, GroupSettingChange, MessageOptions } = require('@adiwajshing/baileys');
 const metadata = require('axios');
 const rgnk = require('../config');
 const Language = require('../language'); 
 const sk = Language.getString('whois'); // Language Support
-let myr = rgnk.WORKTYPE == 'public' ? false : true
 
 var ADMİN_USER = ''
 var USER_USER = ''
@@ -26,7 +25,7 @@ if (rgnk.LANG == 'ID') ADMİN_USER = '*Jumlah Admin:*', USER_USER = '*Jumlah ang
 if (rgnk.LANG == 'ML') ADMİN_USER = '*അഡ്‌മിൻ എണ്ണം:*', USER_USER = '*അംഗങ്ങളുടെ എണ്ണം:*', TR_USER = '*ടർക്കിഷ് അംഗങ്ങളുടെ എണ്ണം:*', Hİ_USER = '*ഇന്ത്യൻ അംഗങ്ങളുടെ എണ്ണം:*', AZ_USER = '*അസർബൈജാൻ അംഗങ്ങളുടെ എണ്ണം:*', SRİ_USER = '*ശ്രീലങ്ക അംഗങ്ങളുടെ എണ്ണം:*', RU_USER = '*റഷ്യൻ അംഗങ്ങളുടെ എണ്ണം:*', USA_USER = '*യു‌എസ്‌എ അംഗങ്ങളുടെ എണ്ണം:*', OTHER = '*മറ്റ് അംഗങ്ങളുടെ എണ്ണം:*'
 
 
-    skl.addCommand({ pattern: 'info$', fromMe: myr, desc: sk.PL_DESC }, async (raganork, match) => { 
+    jsl.addCommand({ pattern: 'info$', fromMe: true, desc: sk.PL_DESC }, async (raganork, match) => { 
         if (raganork.jid.includes('g.us')) {
             var json = await raganork.client.groupMetadataMinimal(raganork.jid) 
             var nwjson = await raganork.client.groupMetadata(raganork.jid) 
