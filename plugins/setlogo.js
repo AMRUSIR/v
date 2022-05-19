@@ -1,4 +1,4 @@
-// credit - souravkl11
+// credit - Afx-Abu
 const axios = require('axios');
 const {skbuffer} = require('raganork-bot');
 const New = require('../events');
