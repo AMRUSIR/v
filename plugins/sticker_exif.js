@@ -1,4 +1,4 @@
-/* (c) souravkl11/raganork
+/* (c) Afx-Abu/Abuser
 You may not use this file except compliance with license!*/
 let {addCommand} = require('../events');
 let { MessageType, Mimetype } = require('@adiwajshing/baileys');
