@@ -11,9 +11,7 @@ let {skbuffer,sticker} = require('raganork-bot');
 const Language = require('../language');
 const Lang = Language.getString('sticker');
 
-let sk = Config.WORKTYPE == 'public' ? false : true
-
-Asena.addCommand({pattern: 'sticker$', fromMe: sk, desc: Lang.STICKER_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'sticker$', fromMe: true, desc: Lang.STICKER_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
