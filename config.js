@@ -1,4 +1,3 @@
-// FILE: SOURAVKL11/RAGANORK
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
@@ -14,22 +13,12 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v3.0.0',
     CHANNEL: 'undefined',
-    SESSION: process.env.RAGANORK_CODE === undefined ? 'apikey' : process.env.RAGANORK_CODE,
-    ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
-    AFN: process.env.ALL_CAPTION === undefined ? '*MADE BY YOUR BOT NAME*' : process.env.ALL_CAPTION,
-    AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
-    ANTI_KICK: process.env.ANTI_KICK === undefined ? 'false' : process.env.ANTI_KICK,
-    CALL_BLOCK: process.env.CALL_BLOCK === undefined ? 'false' : process.env.CALL_BLOCK,
-    ANTI_FILTER: process.env.REMOVE_FILTER === undefined ? 'Myre' : process.env.REMOVE_FILTER,
-    GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
-    LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
-    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
-    KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
+    SESSION: process.env.ABU_CODE === undefined ? 'apikey' : process.env.ABU_CODE,
     M_REPLY: process.env.M_REPLY === undefined ? 'Hey!' : process.env.M_REPLY,
     M_REPLY_VAR: process.env.M_REPLY_VAR === undefined ? 'true' : process.env.M_REPLY_VAR,
-    AFNN: process.env.TAG_REPLY === undefined ? '919074309534@s.whatsapp.net' : process.env.TAG_REPLY,
-    NBSK: process.env.ALL_NUMBER === undefined ? '916282344739' : process.env.ALL_NUMBER,
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined ? 'sᴏᴜʀᴀᴠᴋʟ¹¹;ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;https://www.linkpicture.com/q/rgnk.jpg' : process.env.AUDIO_DATA,
+    AFNN: process.env.TAG_REPLY === undefined ? '917025994178@s.whatsapp.net' : process.env.TAG_REPLY,
+    NBSK: process.env.ALL_NUMBER === undefined ? '917025994178' : process.env.ALL_NUMBER,
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined ? 'ᴀғxᴀʙᴜ¹¹;ᴀʙᴜsᴇʀ;https://www.linkpicture.com/q/rgnk.jpg' : process.env.AUDIO_DATA,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
@@ -49,7 +38,7 @@ module.exports = {
     BOTSK: process.env.BOT_NAME === undefined ? 'PUBLIC BOT' : process.env.BOT_NAME,
     SUPPORT: process.env.ASENA === undefined ? '919074309534-1632403322,120363038867058369' : process.env.ASENA,
     GIF_WEL: process.env.GIF_WEL === undefined ? 'https://c.tenor.com/G9Bu13ZlhVkAAAPo/dancing-funny-dance.mp4' : process.env.GIF_WEL,
-    SLINK: process.env.IG === undefined ? 'instagram.com/sourav_kl11' : process.env.IG,
+    SLINK: process.env.IG === undefined ? 'instagram.com/jasil_xr' : process.env.IG,
     JID: process.env.VERIFIED === undefined ? '0@s.whatsapp.net' : process.env.VERIFIED,
     GIF_BYE: process.env.GIF_BYE === undefined ? 'https://c.tenor.com/6tlIWiAlT_gAAAPo/cat-impressed-cat-wow.mp4' : process.env.GIF_BYE,
     LOGOSK: process.env.ALL_IMG === undefined ? 'https://www.linkpicture.com/q/rgnk.jpg' : process.env.ALL_IMG.split(',')[Math.floor(Math.random()*process.env.ALL_IMG.split(',').length)],
@@ -60,7 +49,7 @@ module.exports = {
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
     SOURAV: process.env.SK_BLOCK === undefined ? 'false' : process.env.SK_BLOCK,
-    SOURAVKL11: process.env.STICKER_DATA === undefined ? 'sᴏᴜʀᴀᴠᴋʟ¹¹|ʀᴀɢᷨᴀͦɴͭᴏʀᴋ' : process.env.STICKER_DATA,
+    SOURAVKL11: process.env.STICKER_DATA === undefined ? 'ᴊᴀsɪʟ¹¹|ᴀʙᴜ' : process.env.STICKER_DATA,
     ANTI_FAKE: process.env.AUTO_FAKE === undefined ? 'sourav' : process.env.AUTO_FAKE,
     AUTO_FAKE: process.env.ANTI_FAKE === undefined ? 'false' : process.env.ANTI_FAKE,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
@@ -74,7 +63,7 @@ module.exports = {
     SKDR: process.env.DURATION === undefined ? '99978509' : process.env.DURATION,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
-    YAK: process.env.YAK === undefined ? '919074309534' : process.env.YAK,
+    YAK: process.env.YAK === undefined ? '917025994167' : process.env.YAK,
     sourav_g_link: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/Dt3C4wrQmt0GG6io1IBIHb' : process.env.GROUP_LINK,
     BRANCH: 'master',
     HEROKU: {
@@ -90,8 +79,8 @@ module.exports = {
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
-    SUPPORT2: "916282344739",
-    SUPPORT3: "919074309534",
-    ST:"https://gist.github.com/souravkl11/",
+    SUPPORT2: "917025994178",
+    SUPPORT3: "919074994655",
+    ST:"https://gist.github.com/Afx-Abu/",
     RT:"4aa49c7848ba4e9224852576223e5de1/raw"
 };
