@@ -1,4 +1,4 @@
-/* (c) Warn: souravkl11/raganork
+/* (c) Warn: Afx-Abu/Abu-wa-bot
 You may not use this file except compliance with license!*/
 let e = require('../events');
 let { MessageType, Mimetype } = require('@adiwajshing/baileys');
